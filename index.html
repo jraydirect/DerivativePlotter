@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivative Plotter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: #333;">Derivative Plotter</h1>
+        <div class="input-group">
+            <label for="plotColor">Plot Color:</label>
+            <input type="color" id="plotColor" value="#0000FF">
+        </div>
+        <div class="input-group">
+            <label for="lineStyle">Line Style:</label>
+            <select id="lineStyle">
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="dotted">Dotted</option>
+            </select>
+        </div>
+        <label for="functionSelect" style="font-size: 18px;">Select a function:</label>
+        <select id="functionSelect">
+            <option value="x^2">Quadratic (x^2)</option>
+            <option value="Math.sin(x)">Sine</option>
+            <option value="Math.cos(x)">Cosine</option>
+            <option value="Math.tan(x)">Tangent</option>
+            <!-- Add more predefined functions here -->
+        </select>
+        <button id="plotBtn">Plot</button>
+        <button id="exportBtn">Export as Image</button>
+        <canvas id="plotCanvas" width="600" height="400"></canvas>
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
